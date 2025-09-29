@@ -1,0 +1,88 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 0.9;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+  padding: 8px;
+  background: #f0f4ff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+li button {
+  background: #ff6f61;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+.progress-container {
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+  margin-top: 15px;
+}
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+  transition: width 0.4s ease;
+}
+#progress {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
