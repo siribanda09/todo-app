@@ -8,17 +8,17 @@ function addTask() {
 
   let li = document.createElement("li");
   
-  // Task text span
+  
   let span = document.createElement("span");
   span.textContent = taskText;
 
-  // Mark complete on click
+  
   span.addEventListener("click", () => {
     li.classList.toggle("completed");
     updateProgress();
   });
 
-  // Delete button
+  
   let delBtn = document.createElement("button");
   delBtn.textContent = "X";
   delBtn.addEventListener("click", () => {
@@ -54,11 +54,12 @@ function updateProgress() {
     progressText = ` ${total} tasks pending. Start completing!`;
   }
 
-  // Update text
+  
   document.getElementById("progress").textContent = progressText;
 
-  // Update progress bar
+  
   let percentage = total === 0 ? 0 : (done / total) * 100;
 
   document.getElementById("progress-bar").style.width = percentage + "%";
+
 }
